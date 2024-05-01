@@ -1,25 +1,77 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>CSCE_670_AuraRead</title>
-   </head>
-   <body>
-      <h1>Welcome to AuraRead</h1>
-      <p>How was your Mood? </p>
-      <section>
-         <h2>About AuraRead</h2>
-         <p>This is a Book recommendation System based on your current Mood</p>
-      </section>
-      <!-- GitHub link -->
-      <p>Check out our GitHub Repo: <a href="https://github.com/prathyushapolepalli-tamu/AuraRead/tree/main">My GitHub</a></p>
-      <!-- YouTube link -->
-      <p>Watch our project video on YouTube: <a href="https://www.youtube.com/watch?v=OtPKxmxOq8o">My YouTube Channel</a></p>
-      <!-- Screenshots -->
-      <section>
+<head>
+    <title>CSCE_670_AuraRead</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header, section {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        p {
+            margin: 10px 0;
+        }
+        a {
+            color: #d0342c;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            display: block;
+            margin: 10px 0;
+            max-width: 100%; /* makes image responsive */
+            height: auto;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to AuraRead</h1>
+        <p>How was your Mood?</p>
+    </header>
+    <section>
+        <h2>About AuraRead</h2>
+        <p>This is a Book recommendation System based on your current Mood. Traditional book recommendation systems suggest titles based on genres or popularity, but they often miss out on one critical factor—how you feel. AuraRead not only finds books that spark your interest, but also books that resonate with your current mood. We used web scrapers to extract mood from book descriptions and reviews, integrating these moods into our dataset. Our model uses collaborative filtering, enhanced with matrix factorization techniques, to predict which books might interest you based on your previous interactions and current mood. Happy reading!</p>
+    <p>Check out our GitHub Repo: <a href="https://github.com/prathyushapolepalli-tamu/AuraRead/tree/main">My GitHub</a></p>
+    <p>Watch our project video on YouTube: <a href="https://www.youtube.com/watch?v=OtPKxmxOq8o">My YouTube Channel</a></p>
+    </section>
+
+    <section>
          <h2>Screenshots</h2>
          <img src="Images/HomePage.png" alt="Home Page" width="500">
          <img src="Images/Onboarding.png" alt="Onboarding Page" width="500">
          <img src="Images/Recomendations.png" alt="Recommendations Page" width="500">
       </section>
-   </body>
+    <section>
+        <h2>Team AuraRead</h2>
+        <p>Priyanka Askani - <a href="mailto:askani2407@tamu.edu">askani2407@tamu.edu</a></p>
+        <p>Prathyusha Pollepalli - <a href="mailto:prathyushapollepalli@tamu.edu">prathyushapollepalli@tamu.edu</a></p>
+        <p>Sharvani Ramineni - <a href="mailto:sharvani.ramineni@tamu.edu">sharvani.ramineni@tamu.edu</a></p>
+    </section>
+    <div class="footer">
+        <p>© 2023 AuraRead</p>
+    </div>
+</body>
 </html>
